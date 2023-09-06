@@ -1,0 +1,431 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+
+import AmareImage from "../assets/amare.png";
+import IBMMeetingsImage from "../assets/ibm-meetings.png";
+import BancoBS2Image from "../assets/banco-bs2.png";
+
+import MachadoUXImage from "../assets/MACHADOUX.svg";
+import MachadoUXWhiteImage from "../assets/MACHADOUX-WHITE.svg";
+
+import PaperIcon from "../assets/paper.svg";
+import LinkedInIcon from "../assets/linkedin.svg";
+
+import MariFullImage from "../assets/mari-full.png";
+---
+
+<Layout>
+  <div id="home" class="hero-background">
+    <header class="wrapper">
+      <a href="#home">
+        <Image src={MachadoUXImage} alt={"Machado UX"} />
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <main>
+    <div class="hero-background hero-container">
+      <section class="full-bleed">
+        <div class="content hero-content">
+          <h1>Maria Clara Machado</h1>
+          <div>
+            <p>
+              Sou uma UX/UI Designer que adora encontrar e resolver problemas,
+              que inclusive vejo frequentemente no meu dia a dia hahah.
+            </p>
+            <p>
+              Meu lema é: o designer pesquisa e se desgasta mentalmente para
+              poupar o usuário, e esse é o sentido de encontrar e solucionar
+              problemas. E não, UX não é criar tela bonitinha, NEM UI.
+            </p>
+          </div>
+          <a
+            class="button"
+            href={import.meta.env.RESUME_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Currículo
+          </a>
+        </div>
+        <Image src={MariFullImage} alt={"Maria Clara Machado"} />
+      </section>
+    </div>
+
+    <section id="projetos" class="projects">
+      <h2>Meus projetos</h2>
+      <p>Envolvendo processos de UX e UI.</p>
+      <div class="wrapper card">
+        <div class="card-img">
+          <h3>Amare</h3>
+          <p>
+            Amare simplifica o agendamento de consultas e exames. (Processos de
+            UX e UI)
+          </p>
+          <Image src={AmareImage} alt="Projeto Amare" />
+          <a
+            class="button"
+            href="https://www.figma.com/file/Ny4dwdCRry7kMFUP5jD17W/Amare-(Redesign)?type=design&node-id=762%3A411&mode=design&t=UhJj9JlyXuzaIQXv-1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver projeto
+          </a>
+        </div>
+        <div class="content">
+          <h3>Amare</h3>
+          <p>
+            Após pesquisas, concluí que as pessoas tendem postergar o
+            agendamento de consultas e exames em virtude da burocracia para
+            contatar diferentes clínicas, verificar a disponibilidade de vagas,
+            alinhar os dias disponíveis e viabilidade dos horários.
+          </p>
+          <p>
+            Diante disto, pelo aplicativo mobile Amare realiza-se o processo de
+            agendamento de forma simples. Nesse projeto, foquei na organização e
+            orientação a quem poderá dar vida ao app (dev), que é muito
+            importante. Sendo assim, separei por pontos o Design System: Cores
+            de texto, ícones, background, layers, borda, field, botões;
+            Tipografia; Ícones; e componentes.
+          </p>
+          <a
+            class="button"
+            href="https://www.figma.com/file/Ny4dwdCRry7kMFUP5jD17W/Amare-(Redesign)?type=design&node-id=762%3A411&mode=design&t=UhJj9JlyXuzaIQXv-1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver projeto
+          </a>
+        </div>
+      </div>
+      <div class="wrapper card">
+        <div class="content">
+          <h3>IBM Meetings</h3>
+          <p>
+            A falta de consistência é um fator que afeta a experiência do
+            usuário e a manutenção do branding de uma empresa. O Webex é uma
+            plataforma de comunicação e colaboração online que foi desenvolvida
+            pela Cisco. Essa plataforma é utilizada pela IBM como ferramenta de
+            comunicação, então como seria se a empresa pudesse trazer a sua
+            identidade à plataforma?
+          </p>
+          <p>
+            Afim de manter a consistência entre entre plataformas, realizei o
+            redesign do Webex, aplicando o design system da IBM, o Carbon.
+          </p>
+          <a
+            class="button"
+            href="https://www.figma.com/file/7sM7gBeXO4VtfpUiE5L2Wc/Webex---Carbon-Design-System?type=design&node-id=201%3A1917&mode=design&t=g80Y5OG8RbyCoWpK-1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver projeto
+          </a>
+        </div>
+        <div class="card-img">
+          <h3>IBM Meetings</h3>
+          <p>
+            Para manter a consistência foi realizado o redesign da plataforma.
+            (Processos de UI)
+          </p>
+          <Image src={IBMMeetingsImage} alt="Projeto IBM Meetings" />
+          <a
+            class="button"
+            href="https://www.figma.com/file/7sM7gBeXO4VtfpUiE5L2Wc/Webex---Carbon-Design-System?type=design&node-id=201%3A1917&mode=design&t=g80Y5OG8RbyCoWpK-1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver projeto
+          </a>
+        </div>
+      </div>
+      <div class="wrapper card">
+        <div class="card-img">
+          <h3>Banco BS2</h3>
+          <p>
+            Redesign web do Banco para transmitir mais profissionalismo.
+            (Processos de UI)
+          </p>
+          <Image src={BancoBS2Image} alt="Projeto Banco BS2" />
+          <a
+            class="button"
+            href="https://www.figma.com/file/7WWs0H38GBDqTxPa2PDyDx/Banco-BS2?type=design&node-id=0-1&mode=design&t=HAvonEXxZAk7OBfC-0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver projeto
+          </a>
+        </div>
+        <div class="content">
+          <h3>Banco BS2</h3>
+          <p>
+            A função de um Website é transmitir credibilidade, segurança,
+            confiabilidade. É através dele que o usuário, a persona busca
+            melhores informações para que se sinta seguro em adquirir um produto
+            ou serviço.
+          </p>
+          <p>
+            Para garantir uma apresentação mais profissional e harmoniosa, foi
+            feito o redesign do Banco, sem tirar os traços da marca, como a
+            humanização através de imagens de pessoas e flexibilidade através
+            das cores mais intensas.
+          </p>
+          <a
+            class="button"
+            href="https://www.figma.com/file/7WWs0H38GBDqTxPa2PDyDx/Banco-BS2?type=design&node-id=0-1&mode=design&t=HAvonEXxZAk7OBfC-0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver projeto
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="contato">
+    <div class="wrapper">
+      <p>
+        Vamos conversar sobre Design, Branding ou sobre um dos meus hobbies como
+        aquarela, viagens no tempo ou O Senhor dos Anéis?
+      </p>
+      <div class="footer-links">
+        <a
+          class="link"
+          href="https://www.linkedin.com/in/machadoux/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image src={LinkedInIcon} alt="linkedin" />
+           Linkedin
+        </a>
+        <a
+          class="link"
+          href={import.meta.env.RESUME_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image src={PaperIcon} alt="resume" />
+           Currículo
+        </a>
+      </div>
+      <div class="footer-bar">
+        <a href="#home">
+          <Image src={MachadoUXWhiteImage} alt={"Machado UX"} />
+        </a>
+      </div>
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  .hero-background {
+    background-color: var(--background);
+  }
+
+  .button {
+    color: var(--text-darker);
+    font-weight: 500;
+    padding: 0.6rem 1.5rem;
+    border: 1px solid var(--text-darker);
+    border-radius: 999px;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .button:hover,
+  .button:focus,
+  .button:active {
+    background-color: var(--text-darker);
+    color: var(--white);
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.1rem;
+    padding-bottom: 2.9rem;
+    border-bottom: 2px solid var(--text);
+  }
+
+  header ul {
+    display: flex;
+    gap: 4.4rem;
+  }
+
+  header a {
+    font-weight: 500;
+    transition: all 0.1s ease-in-out;
+  }
+
+  header a:hover {
+    color: var(--text-darker);
+    /* font-weight: 700; */
+  }
+
+  .hero-container {
+    padding-top: 2.5rem;
+  }
+
+  .hero-content {
+    max-width: 45rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .content h1,
+  .content h3 {
+    font-weight: 700;
+    color: var(--text-darker);
+  }
+
+  .content h1 {
+    font-size: 5rem;
+  }
+
+  .content h3 {
+    font-size: 2.1rem;
+  }
+
+  .content p {
+    font-size: 1.375rem;
+  }
+
+  .content p + p {
+    margin-top: 2rem;
+  }
+
+  .projects {
+    padding: 6.5rem var(--wrapper-padding-inline);
+    margin-inline: auto;
+  }
+
+  .projects > h2 {
+    text-align: center;
+    color: var(--text-darker);
+    font-weight: 700;
+    font-size: 3.75rem;
+  }
+
+  .projects > p {
+    text-align: center;
+    font-family: "Open Sans", "Inter", sans-serif;
+    font-size: 1.75rem;
+    margin-top: 1rem;
+  }
+
+  .card {
+    flex-basis: 50%;
+    margin-top: 6.5rem;
+    display: flex;
+    align-items: center;
+    gap: 6.4rem;
+    background-color: var(--background);
+    border-radius: 12px;
+    padding: 4rem 6rem;
+  }
+
+  .card + .card {
+    margin-top: 3.5rem;
+  }
+
+  .card-img {
+    flex-shrink: 0;
+    width: 50%;
+  }
+
+  .card-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .card-img > :not(img) {
+    display: none;
+  }
+
+  footer {
+    background-color: var(--text-darker);
+    color: var(--background);
+    padding-top: 4rem;
+    padding-bottom: 2.5rem;
+  }
+
+  footer p {
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 3.3rem;
+    max-width: 61rem;
+  }
+
+  .footer-links {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 3.25rem;
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .footer-bar {
+    margin-top: 7rem;
+    padding-top: 1.75rem;
+    border-top: 2px solid rgba(106, 106, 106, 0.85);
+  }
+
+  @media screen and (max-width: 1250px) {
+    .card .content {
+      display: none;
+    }
+
+    .card .card-img {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .card-img > :not(img) {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 87.5%;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    header ul {
+      gap: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    header {
+      flex-direction: column;
+    }
+    header ul {
+      display: none;
+    }
+  }
+</style>
